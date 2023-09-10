@@ -1,0 +1,16 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Debug Chrome Extension",
+            "webRoot": "${workspaceFolder}",
+            "runtimeArgs": [
+                "--remote-debugging-port=9222",
+                "--load-extension=${workspaceFolder}/build/chrome-mv3-dev/"
+            ],
+            "userDataDir": "${workspaceFolder}/.chrome"
+        }
+    ]
+}
